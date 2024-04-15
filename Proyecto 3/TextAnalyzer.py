@@ -37,8 +37,8 @@ for i in range(3):
     lista.append(solicitud.lower())
 
 # Se imprimen las palabras o letras que se quieren buscar y la cantidad de ocasiones en las que aparece
-for i in range(3):
-    print(f"La palabra {lista[i]} se encontró {text_clean.count(lista[i])} veces en el texto proporcionado")
+for i in lista:
+    print(f"La palabra {i} se encontró {text_clean.count(i)} veces en el texto proporcionado")
 
 # Se imprimen el número de palabras, la primera y última
 print(f"\nMencionar además que hay {len(num_palabras)} palabras en el texto")
